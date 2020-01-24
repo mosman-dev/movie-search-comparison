@@ -1,7 +1,6 @@
 const autoCompleteConfig = {
     renderOption(movie) {
         const imgSrc = movie.Poster === 'N/A' ? '' : movie.Poster;
-                // [IF] item.Poster is [EQUAL TO | ===] string 'N/A' [THEN - if true | ? ] assign empty value '' to imgSrc. [OTHERWISE | : ] if it is not equal to/false 'N/A', assign item.Poster to imgSrc.
         return `
             <img src="${imgSrc}">
             ${movie.Title} (${movie.Year})
